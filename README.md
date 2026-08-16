@@ -1,4 +1,4 @@
-# CROW SMP — Server History Logs
+## CROW SMP — Server History Logs
 Welcome to the CROW SMP History Archive.
 This section of the website is dedicated to recording the history of CROW SMP and preserving the events that have taken place throughout the server's existence. As the server continues to grow, more players arrive, new clans are created, old places are forgotten, and events become harder to remember. These logs exist to make sure the past is not lost.
 The history of CROW SMP is not simply a collection of dates. It is the story of the people who have lived here, the places they created, the conflicts they started, the friendships they made, and the events that changed the server.
