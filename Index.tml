@@ -33,8 +33,8 @@
 </head>
 <body>
 
-<h1>SIGNAL LOST</h1>
-<p>Something is listening. Find the frequency.</p>
+<h1>CODE NEEDED</h1>
+<p>please enter the code for the files for the server.</p>
 
 <div>
   <input type="text" id="answer" placeholder="enter code">
