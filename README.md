@@ -30,11 +30,11 @@ You may come across old buildings, strange locations, messages, abandoned areas,
 **Don't be afraid to investigate.**
 Just remember that some discoveries are connected to the larger story of CROW SMP, so if something seems strange, it might be worth remembering.
 
-## 👥 Meet the Community
+Meet the Community
 CROW SMP is built around its players. You'll meet different people, clans, groups, and characters as you play.
 Take the time to meet other players and learn about the community. Everyone has their own place in the world, and you never know who might have information that helps you understand something you've discovered.
 
-## 📖 The Story
+The Story
 There is a story hidden throughout CROW SMP, but **you don't need to know everything when you first join.**
 In fact, discovering things yourself is part of the fun.
 Some information on this website will explain the basics, while other information may be intentionally left unexplained. If you want to investigate the deeper parts of the server, keep exploring, talk to other players, and pay attention to things that seem out of place.
