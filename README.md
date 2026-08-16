@@ -14,14 +14,14 @@ Getting Started
 When you first join, take some time to explore and get familiar with the server. Learn where the important areas are, meet other players, and figure out how things work.
 You'll find information about:
 
-* How to get started on CROW SMP
-* Server rules and expectations
-* Clans and how they work
-* Important locations
-* Jobs, ranks, and other server systems
-* Useful commands and features
-* How to get help from other players
-* Important information for new members
+How to get started on CROW SMP
+Server rules and expectations
+Clans and how they work
+Important locations
+Jobs, ranks, and other server systems
+Useful commands and features
+How to get help from other players
+Important information for new members
 
  Explore the World
 There is a lot to discover across CROW SMP. Not everything you find will be explained immediately, and that's part of the experience.
