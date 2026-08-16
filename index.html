@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>???</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: #33ff33;
+    font-family: 'Courier New', monospace;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    letter-spacing: 4px;
+    font-size: 28px;
+  }
+  p {
+    max-width: 500px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+  .terminal {
+    border: 1px solid #33ff33;
+    background: #0f0f0f;
+    padding: 30px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 420px;
+  }
+  #answer {
+    background: #0a0a0a;
+    border: 1px solid #33ff33;
+    color: #33ff33;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+  #answer:focus {
+    outline: none;
+    border-color: #ffffff;
+  }
+  button {
+    background: #33ff33;
+    color: #0a0a0a;
+    border: none;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    width: 100%;
+  }
+  button:hover {
+    background: #ffffff;
+  }
+  #message {
+    margin-top: 16px;
+    min-height: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  #message.error { color: #ff3333; }
+  #message.success { color: #33ff33; }
+</style>
+</head>
+<body>
+
+<h1>SIGNAL LOST</h1>
+<p>Something is listening. Find the frequency, then enter the code below to access the archive.</p>
+
+<div class="terminal">
+  <input type="text" id="answer" placeholder="enter code" autocomplete="off">
+  <button onclick="checkAnswer()">SUBMIT</button>
+  <div id="message"></div>
+</div>
+
+<!--
+  You found the source. Good instinct -- that's how this works.
+  First clue: reverse this word.
+  ANOISUL
+-->
+
+<script>
+  // Second clue lives here, disguised as a variable no one will read.
+  const _seed = "the answer is: static"; // hint, not the actual code
+
+  function checkAnswer() {
+    const val = document.getElementById('answer').value.trim().toLowerCase();
+    const msg = document.getElementById('message');
+
+    if (val === 'illusion') {
+      msg.textContent = 'ACCESS GRANTED. Redirecting...';
+      msg.className = 'success';
+      setTimeout(function() {
+        window.location.href = 'case-files.html';
+      }, 1200);
+    } else {
+      msg.textContent = 'ACCESS DENIED';
+      msg.className = 'error';
+    }
+  }
+
+  document.getElementById('answer').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') checkAnswer();
+  });
+</script>
+
+</body>
+</html>
