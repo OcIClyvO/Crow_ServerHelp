@@ -80,8 +80,8 @@
 </head>
 <body>
 
-<h1>SIGNAL LOST</h1>
-<p>Something is listening. Find the frequency, then enter the code below to access the archive.</p>
+<h1>CODE NEEDED</h1>
+<p>Please enter the code below to access the archive.</p>
 
 <div class="terminal">
   <input type="text" id="answer" placeholder="enter code" autocomplete="off">
@@ -91,13 +91,13 @@
 
 <!--
   You found the source. Good instinct -- that's how this works.
-  First clue: reverse this word.
+  First clue:
   ANOISUL
 -->
 
 <script>
-  // Second clue lives here, disguised as a variable no one will read.
-  const _seed = "the answer is: static"; // hint, not the actual code
+
+  const _seed = "the answer is: static"; 
 
   function checkAnswer() {
     const val = document.getElementById('answer').value.trim().toLowerCase();
