@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>???</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    background: #0a0a0a;
+    color: #33ff33;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding-top: 15vh;
+  }
+  h1 { letter-spacing: 4px; }
+  #answer {
+    background: #111;
+    border: 1px solid #33ff33;
+    color: #33ff33;
+    padding: 8px;
+    font-family: inherit;
+  }
+  button {
+    background: #33ff33;
+    color: #0a0a0a;
+    border: none;
+    padding: 8px 16px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  #message { margin-top: 20px; min-height: 24px; }
+</style>
+</head>
+<body>
+
+<h1>SIGNAL LOST</h1>
+<p>Something is listening. Find the frequency.</p>
+
+<div>
+  <input type="text" id="answer" placeholder="enter code">
+  <button onclick="checkAnswer()">SUBMIT</button>
+</div>
+
+<div id="message"></div>
+
+<!--
+  You found the source. Good instinct — that's how this works.
+  First clue: reverse this word.
+  ANOISUL
+-->
+
+<script>
+  // Second clue lives here, disguised as a variable no one will read.
+  const _seed = "the answer is: static"; // hint, not the actual code
+
+  function checkAnswer() {
+    const val = document.getElementById('answer').value.trim().toLowerCase();
+    const msg = document.getElementById('message');
+
+    if (val === 'illusion') {
+      msg.textContent = 'CORRECT. Redirecting...';
+      // Swap this for your next hidden page once you create one:
+      // window.location.href = 'secret-page.html';
+    } else {
+      msg.textContent = 'ACCESS DENIED';
+    }
+  }
+</script>
+
+</body>
+</html>
